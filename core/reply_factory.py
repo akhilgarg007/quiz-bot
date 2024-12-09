@@ -7,7 +7,6 @@ def generate_bot_responses(message, session):
     bot_responses = []
 
     current_question_id = session.get("current_question_id")
-    print('current_question_id', current_question_id)
     if not current_question_id:
         bot_responses.append(BOT_WELCOME_MESSAGE)
 
